@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --btn-primary-color:#4CAF50;
+}
+.calc-container{
+    width:255px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+.input-box{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+ 
+}
+.input-box .input__area{
+    width: 100%;
+    height: 80px;
+    background-color: #3b3b3b;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+.calc-body{
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#cancelation{
+    background-color: rgb(140, 135, 7) !important;
+}
+
+.left{
+    width: 80%;
+}
+.right{
+    width: 26%;
+    text-align: center;
+}
+.digits{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.btn{
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--btn-primary-color);
+    cursor: pointer;
+}
+.digit-btn{
+    background-color: rgb(173, 241, 241);
+    color: #3b3b3b;
+}
+.btn:hover{
+    background-color: rgba(228, 198, 29, 0.834);
+    color: #fff;
+}
+#zero{
+    grid-column-end: span 2;
+    border-bottom-left-radius: 8px;
+}
+#equal{
+    border-bottom-right-radius: 8px;
+}

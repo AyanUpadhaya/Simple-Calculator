@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcuator Project</title>
+</head>
+<body>
+    <!-- calculator container -->
+    <div class="calc-container">
+        <!-- input box -->
+        <div class="input-box">
+            <input type="text" id="input" class="input__area">
+        </div>
+        <!-- calculator body -->
+        <div class="calc-body">
+            <div class="left">
+                <div class="head">
+                    <div id="cancelation" class="btn">C</div>
+                    <div id="delete" class="btn">DE</div>
+                </div>
+                
+                <div class="digits">
+                    <div class="btn digit-btn">7</div>
+                    <div class="btn digit-btn">8</div>
+                    <div class="btn digit-btn">9</div>
+                    <div class="btn digit-btn">4</div>
+                    <div class="btn digit-btn">5</div>
+                    <div class="btn digit-btn">6</div>
+                    <div class="btn digit-btn">1</div>
+                    <div class="btn digit-btn">2</div>
+                    <div class="btn digit-btn">3</div>
+                    <div class="btn digit-btn" id="zero">0</div>
+                    <div class="btn digit-btn" >.</div>
+                </div>
+            </div>
+
+            <!-- rigth operation -->
+
+            <div class="right">
+                <div class="operations">
+                    <div class="btn" id="div">/</div>
+                    <div class="btn" id="add">+</div>
+                    <div class="btn" id="sub">-</div>
+                    <div class="btn" id="multiply">*</div>
+                    <div class="btn" id="equal">=</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js""></script>
+</body>
+</html>
